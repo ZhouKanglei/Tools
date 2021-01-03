@@ -62,8 +62,6 @@ def csdn(url):
 
 
 def zhihuEq2Tex(content):
-
-
     pos = 0 
     while pos < content.rfind('!['):
         start = content.index('![', pos)
