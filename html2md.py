@@ -231,4 +231,4 @@ def checkSite(url):
 
 if __name__ == "__main__":
     # main(sys.argv[1:])
-    checkSite('https://zhuanlan.zhihu.com/p/288322305')
+    checkSite('https://zhuanlan.zhihu.com/p/112277874')
