@@ -1,0 +1,144 @@
+\documentclass[review, 12pt]{elsarticle}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xparse}
+\usepackage{blindtext}
+\usepackage{morewrites}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{xkeyval}
+\usepackage{tcolorbox}
+
+\newwrite\authorbibfile
+\AtBeginDocument{%
+  \immediate\openout\authorbibfile=\jobname.aub%
+}%
+\AtEndDocument{%
+\immediate\closeout\authorbibfile
+\InputIfFileExists{\jobname.aub}{}{}
+}%
+
+\makeatletter
+\define@key{authorbib}{scale}[1]{%
+\def\AuthorbibKVMacroScale{#1}%
+}
+\define@key{authorbib}{wraplines}[10]{%
+\def\AuthorbibKVMacroWraplines{#1}%
+}
+\define@key{authorbib}{imagewidth}[4cm]{%
+\def\AuthorbibKVMacroImagewidth{#1}%
+}
+\define@key{authorbib}{overhang}[10pt]{%
+\def\AuthorbibKVMacroOverhang{#1}%
+}
+\define@key{authorbib}{imagepos}[l]{%
+\def\AuthorbibKVMacroImagepos{#1}%
+}
+\makeatother
+
+\presetkeys{authorbib}{imagepos=l, imagewidth=4cm, wraplines=8, overhang=20pt}{}
+\newlength{\AuthorbibTopSkip}
+\newlength{\AuthorbibBottomSkip}
+\setlength{\AuthorbibTopSkip}{\baselineskip}
+\setlength{\AuthorbibBottomSkip}{\baselineskip}
+\NewDocumentCommand{\authorbibliography}{+o+m+m+m}{%
+  \IfNoValueTF{#1}{%
+  }{%
+    \setkeys{authorbib}{#1}%
+    \immediate\write\authorbibfile{%
+      \string\begin{wrapfigure}[\AuthorbibKVMacroWraplines]{\AuthorbibKVMacroImagepos}[\AuthorbibKVMacroOverhang]{\AuthorbibKVMacroImagewidth}^^J
+        \string\includegraphics[scale=\AuthorbibKVMacroScale]{#2}^^J
+        \string\end{wrapfigure}^^J
+    }%
+  }%
+  \IfNoValueTF{#3}{%
+    \typeout{Warning: No author name}%
+  }{%
+      \immediate\write\authorbibfile{%
+      \unexpanded{\vspace{\AuthorbibTopSkip}}^^J
+      \string\noindent\relax
+      \unexpanded{\textbf{#3}\par}^^J
+      \string\noindent\relax
+      \unexpanded{#4}^^J%
+      \unexpanded{\vspace{\AuthorbibBottomSkip}}^^J
+      }%
+  }%
+}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \usepackage{cite} 
+\usepackage[colorlinks, 
+	linkcolor = red,
+	anchorcolor = blue,
+	citecolor = green,
+	CJKbookmarks = True
+]{hyperref}
+
+\def\myauthor{Author 1, Author 2} % Author
+\def\mycoauthor{} % co-author
+\def\mytitle{Article Title Article Title Article Title Article Title} % title
+\def\mydate{\today} % date
+\def\myjournal{Journal} % date
+
+\begin{document}
+% \maketitle
+\begin{titlepage}
+  \begin{center}
+    {\Large \textbf{\mytitle}}
+    \par \vspace{2cm}
+    \myauthor
+    \par \vspace{13cm}
+    \mydate
+  \end{center}
+\end{titlepage}
+\thispagestyle{empty}
+
+\section*{Cover letter}
+
+\begin{tcolorbox}[title = To Editor]
+\noindent Dear Editor:
+
+\quad We would like to submit the enclosed manuscript entitled \textit{\mytitle}, which we wish to be considered for publication in \textit{\myjournal}.
+
+\quad We claim that none of the material in the paper has been published or is under consideration for publication elsewhere.
+
+\quad Thank you very much for consideration. I am looking forward to hearing from you soon.
+
+\myauthor
+
+\mydate
+
+\end{tcolorbox}
+
+\newpage
+\thispagestyle{empty}
+
+\section*{Conflicts of Interest}
+
+The authors declare that this paper is original and has no conflict of interest.
+
+\newpage
+\thispagestyle{empty}
+
+\section*{Author Biography}
+
+
+\authorbibliography[scale=0.5, wraplines=8, overhang=40pt, imagewidth=0.25\textwidth, imagepos=r]{authors/author_1.jpg}{Author 1}{
+  received his M.S. degree in...
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+  \\
+}
+
+
+\authorbibliography[scale=0.5, wraplines=8, overhang=40pt, imagewidth=0.25\textwidth, imagepos=r]{authors/author_2.jpg}{Author 2}{
+  received his M.S. degree in...
+}
+
+\end{document}

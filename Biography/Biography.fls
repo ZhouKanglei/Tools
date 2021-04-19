@@ -1,0 +1,250 @@
+PWD E:/Office_Files/Latex/Biography
+INPUT e:/Program Files/texlive/2019/texmf.cnf
+INPUT e:/Program Files/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT e:/Program Files/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT Biography.tex
+OUTPUT Biography.log
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/elsarticle/elsarticle.cls
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/base/article.cls
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/base/size12.clo
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/base/size12.clo
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT Biography.spl
+INPUT Biography.spl
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
+OUTPUT Biography.spl
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/unicode-data/UnicodeData.txt
+INPUT nul
+INPUT nul
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/blindtext/blindtext.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/blindtext/blindtext.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/tools/xspace.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/tools/xspace.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/morewrites/morewrites.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/morewrites/morewrites.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/morewrites/primargs.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/morewrites/primargs.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/ms/everyshi.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/ms/everyshi.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/pgf.revision.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/pgf.revision.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/tools/verbatim.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/environ/environ.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/environ/environ.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/url/url.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/url/url.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT Biography.aux
+INPUT Biography.aux
+OUTPUT Biography.aux
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+OUTPUT Biography.aub
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT e:/Program Files/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT Biography.out
+INPUT Biography.out
+INPUT Biography.out
+INPUT Biography.out
+INPUT ./Biography.out
+INPUT ./Biography.out
+OUTPUT Biography.out
+OUTPUT Biography.pdf
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT Biography.mw
+OUTPUT Biography.mw
+INPUT e:/Program Files/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT Biography.mw
+OUTPUT Biography.mw
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+OUTPUT Biography.mw
+INPUT Biography.mw
+OUTPUT Biography.mw
+OUTPUT Biography.mw
+INPUT Biography.mw
+OUTPUT Biography.mw
+OUTPUT Biography.mw
+INPUT Biography.mw
+OUTPUT Biography.mw
+OUTPUT Biography.mw
+INPUT Biography.mw
+OUTPUT Biography.mw
+OUTPUT Biography.mw
+INPUT Biography.mw
+OUTPUT Biography.mw
+OUTPUT Biography.mw
+INPUT Biography.mw
+OUTPUT Biography.mw
+OUTPUT Biography.aub
+INPUT Biography.aub
+INPUT Biography.aub
+INPUT authors/author_1.jpg
+INPUT ./authors/author_1.jpg
+INPUT ./authors/author_1.jpg
+INPUT authors/author_2.jpg
+INPUT ./authors/author_2.jpg
+INPUT ./authors/author_2.jpg
+OUTPUT Biography.mw
+INPUT Biography.mw
+OUTPUT Biography.mw
+INPUT Biography.aux
+OUTPUT Biography.out
+INPUT ./Biography.out
+INPUT ./Biography.out
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT e:/Program Files/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
