@@ -1,0 +1,423 @@
+% LaTeX rebuttal letter example. 
+\documentclass[12pt, review]{elsarticle}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{framed} % to add frames around comments
+\usepackage{color, soul}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable, theorems}
+\renewcommand\thesubsection{\alph{subsection})}
+
+\usepackage{setspace}
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{\setstretch{0.1}}
+\titleformat{\subsection}{\normalfont\itshape}{\color{blue} \thesubsection}{0.5em}{\setstretch{0.1}}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{newtxmath}
+\usepackage{subfigure}
+\usepackage{pdfpages}
+\usepackage{caption}
+\usepackage{colortbl}
+
+\gdef\ie{\textit{i.e.}}
+\gdef\eg{\textit{e.g.}}
+\gdef\etc{\textit{etc}}
+\gdef\etal{\textit{et al.}~}
+\gdef\rl{\mathrm{R}\text{-}\ell_2}
+\gdef\problem{the \textit{intra-clip confusion} and \textit{inter-clip incoherence} problems}
+
+\newcommand{\hltwo}[1]{{\sethlcolor{myhlcolortwo}\hl{#1}}}
+
+\definecolor{myhlcolor}{rgb}{1, 1, 0}
+\definecolor{myhlcolortwo}{rgb}{1, 1, 0}
+\definecolor{myhlcolor}{rgb}{1, 1, 1}
+
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage[ruled]{algorithm2e} % Algorithm
+\usepackage{color,xcolor}
+\newcommand{\mycommfont}[1]{\footnotesize\ttfamily\color{green!65!blue}{#1}}
+\SetCommentSty{mycommfont}
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}
+\gdef\ie{\textit{i.e.}}
+\gdef\eg{\textit{e.g.}}
+\gdef\etc{\textit{etc}}
+\gdef\etal{\textit{et al.~}}
+\usepackage{xifthen}
+% define counters for reviewers and their points
+\newcounter{reviewer}
+\setcounter{reviewer}{0}
+\newcounter{point}[reviewer]
+\setcounter{point}{0}
+
+\definecolor{matlabblue}{rgb}{0,0.4470,0.7410}
+\definecolor{matlabred}{rgb}{0.8500,0.3250,0.0980}
+\definecolor{matlabyellow}{rgb}{0.9290,0.6940,0.1250}
+\definecolor{matlabpurple}{rgb}{0.4940,0.1840,0.5560}
+\definecolor{matlabgreen}{rgb}{0.4660,0.6740,0.1880}
+\definecolor{matlabcyan}{rgb}{0.3010,0.7450,0.9330}
+\definecolor{matlabmagenta}{rgb}{0.6350,0.0780,0.1840}
+
+% This refines the format of how the reviewer/point reference will appear.
+\renewcommand{\thepoint}{P\,\thereviewer.\arabic{point}} 
+
+% command declarations for reviewer points and our responses
+\newcommand{\reviewersection}{\stepcounter{reviewer} 
+				\bigskip \bigskip \hrule
+                \subsection*{\bfseries To Reviewer \thereviewer} 
+                \addcontentsline{toc}{subsection}{To Reviewer \thereviewer} 
+                \bigskip \hrule \bigskip}
+
+\newenvironment{point}
+   {\refstepcounter{point} \bigskip \noindent {\textbf{Reviewer~Point~\thepoint} } ---\ \color{blue}}
+   {\par}
+
+\newenvironment{revision}[2][]
+   {\vspace{0.2cm} \begin{tcolorbox}[breakable, enhanced, colback = yellow, 
+   title = Revision \thepoint \  #2,#1,
+   colbacktitle = red!85!black, colframe = red!75!black
+   ]\normalfont}
+   {\par\end{tcolorbox}}
+
+\newcommand{\shortpoint}[1]{\refstepcounter{point}  \bigskip \noindent 
+	{\textbf{Reviewer~Point~\thepoint} } ---~#1\par }
+
+\newenvironment{reply}
+   {\medskip \noindent \textbf{Reply}:\ \begin{sf}}
+   {\medskip \end{sf}}
+
+\newcommand{\shortreply}[2][]{\medskip \noindent \begin{sf}\textbf{Reply}:\  #2
+	\ifthenelse{\equal{#1}{}}{}{ \hfill \footnotesize (#1)}%
+	\medskip \end{sf}}
+
+% Line & Page
+% \newcommand{\linepage}[2]{
+% \par \rightline{\textbf{Line #1, Page #2}}
+% }
+\newcommand{\linepage}[2]{
+\par \rightline{\textbf{Page #2}}
+}
+
+\newcommand{\footlabel}[2]{%
+    \addtocounter{footnote}{1}%
+    \footnotetext[\thefootnote]{%
+        \addtocounter{footnote}{-1}%
+        \refstepcounter{footnote}\label{#1}%
+        #2%
+    }%
+    $^{\ref{#1}}$%
+}
+
+\newcommand{\footref}[1]{%
+    $^{\ref{#1}}$%
+}
+
+\usepackage[misc]{ifsym}
+\usepackage{bbding}
+
+\def\mycoauthor{The Authors} 
+\def\mytitle{Article Title Here} % title
+\def\myarticleno{Article Number: }
+\def\mydate{\today} % date
+
+\def\myauthor{
+Author 1 \footlabel{buaa}{XX University}, Author 2 \footref{buaa}, Author 3 \footlabel{durham}{XX University}, and Author 4 \footref{buaa}$^,$ \Envelope} 
+
+\usepackage[colorlinks, 
+	bookmarks=True,
+	linkcolor = red,
+	anchorcolor = blue,
+	citecolor = green,
+	CJKbookmarks = True
+]{hyperref}
+\makeatletter
+\AtBeginDocument{\def\@citecolor{cyan}}
+\AtBeginDocument{\def\@urlcolor{magenta}}
+\AtBeginDocument{\def\@linkcolor{blue}}
+\makeatother
+\usepackage[nameinlink]{cleveref}
+\crefname{algocf}{alg.}{algs.}
+\Crefname{line}{Algorithm}{Algorithms}
+\crefformat{footnote}{#2\footnotemark[#1]#3}
+\begin{document}
+\setulcolor{blue} 
+\setstcolor{red} 
+\sethlcolor{yellow} 
+
+\begin{titlepage}
+\noindent \textbf{\myarticleno} \\
+\mytitle \\
+\myauthor
+\begin{center}
+  \vspace{1cm}
+
+  \Large \textbf{Response to Editors \& Reviewers}
+
+  \vspace{1cm}
+\end{center}
+
+\begin{tcolorbox}[breakable, title = To editors and reviewers]
+Dear editors and reviewers:
+\bigskip
+
+\quad Our sincere thanks go out to the editors and reviewers who reviewed our manuscript and provided constructive comments that significantly improved it. 
+
+\quad We have made detailed revisions in response to comments and suggestions made by editors and reviewers, and the main changes are summarized below:
+\begin{itemize}
+	\item \ul{We have added extra explanations on the proposed method;}
+	\item \ul{A new experiment is conducted on the effectiveness of groups;}
+	\item \ul{The font size in all the figures has been properly adjusted;}
+	\item \ul{All grammar errors and editing issues are fixed.}
+\end{itemize}
+\bigskip
+
+Best regards, \\
+\mycoauthor \\
+\mydate
+\end{tcolorbox}
+
+\end{titlepage}
+
+% 目录
+\tableofcontents
+\newpage
+
+
+% 说明
+\noindent Dear all:
+
+~\\
+\indent Thanks again for reviewing and processing our manuscript, particularly for your constructive comments and valuable suggestions. Following these comments and suggestions, we have revised the manuscript. The following is a point-by-point response to editors and reviewers, in which we first quote the comments and then reply how we have revised the manuscript to accommodate the changes. We use \begin{sf}black sans serif font\end{sf} for our responses and \textcolor{blue}{blue} for comments to facilitate cross-referencing. The revised manuscript highlights the revision with \hl{yellow shading}.
+
+~\\
+\noindent Best regards,
+
+\noindent \mycoauthor
+
+\noindent \mydate
+
+
+\tableofcontents
+\newpage
+
+\section{To Editor-in-Chief}
+
+
+\subsection{Editor’s Decision Letter}
+
+Ms. Ref. No.: ESWA-D-21-01688R2
+
+Title: Solution Path Algorithm for Twin Multi-class Support Vector Machine
+
+Expert Systems With Applications
+
+Dear Dr. Li, 
+
+As Editor-in-Chief, I’m writing this editorial decision letter on your paper submission ESWA-D-21-01688R1.  If you are interested in submitting a revised version, please read through this entire editorial decision letter carefully and take all actions seriously in order to avoid any delay in the review process of your revised manuscript submission.  You need to upload a ‘Detailed Response to Reviewers’ in the EM system with the following sections while submitting the revised manuscript. Please note that the Required Sections (Section \#1 - a \& b, Section \#2 - a \& b, Section \#3 - a \& b) with specific Compliance Requirements (stated in this editorial decision letter) must be clearly labeled and included in the 'Detailed Response to Reviewers.’  The Required Sections must be clearly placed before the revised manuscript. NOTE: Section \#1-(a) MUST contain the COMPLETE text covered in this email letter from Editor-in-Chief, rather than just only the first paragraph of this email letter from Editor-in-Chief. Please note that your
+submission will be sent back to the authors and will NOT be admitted for further review if any of the Required Sections (i.e., Section \#1 – a \& b, Section \#2 – a \& b, Section \#3 – a \& b) is incomplete or any non-compliance of the ESWA authors’ guidelines in the PDF file of the revised manuscript that you approve in EM system.  So you need to take the Required Sections and Compliance Requirements seriously to avoid any delay in the review process of your revised manuscript.  The font size of the Required Sections should be consistent and readable. The Required Sections must be placed in the order listed: 
+
+REQUIRED SECTIONS: 
+
+Section \#1: a) and b)
+
+a.  The entire editorial decision letter (i.e., complete text covered in this email letter) from Editor-in-Chief, and 
+
+b.  your Point-to-Point responses to Editor-in-Chief in terms of Required Sections and Compliance Requirements.  
+
+Section \#2: a) and b)
+
+a.  The entire editorial decision comments made by the Associate Editor, and 
+
+b.  your Point-to-Point responses to the Associate Editor.  
+
+Section \#3: a) and b)
+
+a.  The entire comments made by the Reviewers, and 
+
+b.  your Point-to-Point responses to the Reviewers. Your Point-to-Point responses should be grouped by reviewers.  
+
+COMPLIANCE REQUIREMENTS: 
+
+In addition, please note that prior to admitting the revised submission to the next rigorous review process, all paper submissions must completely comply with ESWA Guide for Authors (see details at {https://www.elsevier.com/journals/expert-systems-with-applications/0957-4174/guide-for-authors}).  These include at least the following Compliance Requirements:
+
+A) Authorship policies - Please also note that ESWA takes authorship very seriously and all paper submissions MUST completely comply with all of the following three policies on authorship (clearly stated in the questionnaire responses in EM system) prior to a rigorous peer review process:
+
+A)-1: The corresponding author needs to enter the full names, full affiliation with country and email address of every contributing author in EM online system.  It is also mandatory that every contributing coauthor must be listed in EM at submission.
+
+A)-2: It is mandatory that the full names, full affiliation with country and email address of every contributing author must be included in title (authorship) page of the manuscript. The first page of the manuscript should contain the title of the paper, and the full name, full affiliation with country and email address of every contributing author. Note that cover letter is not title (authorship) page.  
+
+A)-3: The authorship information in EM system must be consistent with the authorship information on the title (authorship) page of the manuscript.
+
+B)  Guidelines of reference style and reference list – Citations in the text should follow the referencing style used by the American Psychological Association (APA).  
+
+B)-1: Reference Style:
+Citations in the text should follow the referencing style used by the American Psychological Association. You are referred to the Publication Manual of the American Psychological Association, Sixth Edition, ISBN 978-1-4338-0561-5.  APA’s in-text citations require the author’s last name and the year of publication. You should cite publications in the text, for example, (Smith, 2020).  However, you should not use [Smith, 2020]. Note: There should be no [1], [2], [3], etc in your manuscript. 
+
+B)-2: Reference List:
+References should be arranged first alphabetically by the surname of the first author followed by initials of the author’s given name, and then further sorted chronologically if necessary. More than one reference from the same author(s) in the same year must be identified by the letters 'a', 'b', 'c', etc., placed after the year of publication. For example, Van der Geer, J., Hanraads, J. A. J., \& Lupton, R. A. (2010). The art of writing a scientific article. Journal of Scientific Communications, 163, 51–59. {https://doi.org/10.1016/j.Sc.2010.00372}. Note: There should be no [1], [2], [3], etc in your references list. 
+
+C) Highlights guidelines – There should be a maximum of 85 characters, including spaces, per Highlight. Please kindly read this guideline carefully - the guideline does NOT say there should be a maximum of 85 words per Highlight.  It says there should be a maximum of 85 characters per Highlight.  As examples, the word “impact” consists of 6 characters; the word "significance" consists of 12 characters. Only include 3 to 5 Highlights. Minimum number is 3, and maximum number is 5.
+
+NOTE: Your paper submission will be returned to authors and will NOT be admitted to further review if the revised paper fails to completely comply with the ESWA Guide for Authors. You need to take these Compliance Requirements seriously to avoid any delay in the review process of your revised manuscript.
+
+To submit a Complete and Compliance revision, please go to {https://www.editorialmanager.com/eswa/} and login as an Author. 
+
+Your username is: ********
+
+If you need to retrieve password details, please go to:
+******** 
+
+On your Main Menu page is a folder entitled "Submissions Needing Revision". You will find your submission record there.
+
+The submission deadline of revised version is July 30, 2022.
+
+Look forward to receiving your revised submission and Required Sections (i.e., Section \#1 – a \& b, Section \#2 – a \& b, and Section \#3 – a \& b) with Compliance Requirements in 'Detailed Response to Reviewers.'
+
+\noindent With kind regards,
+
+\noindent Dr. Binshan Lin 
+
+\noindent BellSouth Professor 
+
+\noindent Editor-in-Chief, Expert Systems with Applications  
+
+\noindent Louisiana State University Shreveport 
+
+\noindent Email: \verb|Binshan.Lin@LSUS.edu| 
+
+
+\subsection{Response to Editor-in-Chief}
+\noindent Dear editor-in-chief: 
+
+Thank you for your valuable comments. We have completed all the
+problems in the article according to your requirements, and hope it can satisfy the demand.
+
+\begin{enumerate}
+  \item All the required sections are included.
+  \item Our paper completely complies with all the ESWA compliance requirements:
+  \begin{itemize}
+    \item Authorship policies: the author and authorship information completely comply with all the requirements.
+    \item Guidelines of reference style and reference list: citations in the text follow the referencing style used by the American Psychological Association.
+    \item Highlights guidelines: all the highlights completely comply with the characters  number and contents requirements.
+  \end{itemize}
+  \item All the comments by Reviewer \#2 are considered, including some symbols and descriptions.
+\end{enumerate}
+
+\noindent Best regards,
+
+\noindent Juntao Li
+
+\noindent \mydate
+
+\section{To Associate Editor}
+\subsection{Associate Editor’s Comments}
+1. Reviewer 2 is happy with the replies to his/her comments in the second round of review. However, he/she still has a few minor points for the authors to address. Authors are invited to revise paper providing point-to-point responses according to the comments raised by the reviewer. When revising the submission please highlight the changes you make in the manuscript by using colored text.
+
+2. Prior to the next review process, you need to completely comply with
+
+1) ESWA authorship policies,
+
+2) ESWA guidelines of reference style and reference list, and
+
+3) highlight guidelines.
+
+3. Prior to the next review process, your submission needs to include each of the “Required Sections.” The Required Sections must be placed in the order listed: Section \#1 – a, Section \#1-b, Section \#2-a, Section \#2-b, Section \#3-a, and Section \#3-b.   
+
+Note that Section \#1- a MUST contain the COMPLETE text covered in this email letter from Editor-in-Chief.
+
+
+
+\subsection{Response to Associate Editor}
+\noindent Dear associate editor:
+
+Thank you for your valuable comments. We have revised the paper and provide point-to-point response to the comments raised by the reviewers in the following according to your requirements.
+
+\begin{enumerate}
+\item All the comments by Reviewer \#2 are fixed, including the descriptions and references.
+\item We have completely complied with 1) ESWA authorship policies,
+2) ESWA guidelines of reference style and reference list, and
+3) highlight guidelines:
+  \begin{itemize}
+    \item Authorship policies: the author and authorship information completely comply with all the requirements.
+    \item Guidelines of reference style and reference list: citations in the text follow the referencing style used by the American Psychological Association.
+    \item Highlights guidelines: all the highlights completely comply with the characters  number and contents requirements.
+  \end{itemize}
+\item All the required sections are included.
+\end{enumerate}
+
+
+\noindent \mycoauthor
+
+\noindent \mydate
+
+
+\section{Response to Reviewers}
+\subsection{Reviewers' Comments}
+
+
+Reviewer \#2:
+
+Thank you for responding to my comments, however, I do not see the changes in the document related to your responses. For instance:
+
+*) P4: The authors say 'In the same year, another OVR TSVM (Angulo et al, 2003) was designed to solve the multi-classification ..' However, in the response letter, they say 'Indeed, Angulo et al. (2003) have adopted the idea of OVR strategy for SVM. Thus, we have replaced it with (Cong et al., 2008) that the idea of OVR has been introduced into TSVM.'
+
+*) P23, line 437: add reference related to OVO TSVM. In the response letter, they say 'According to Sect. 3.2.1 in (Ding et al., 2019), this work implements OVO TSVM for multi-class classification by combining TSVM and OVO strategy'
+
+
+\subsection{Response to Reviewers}
+\noindent Dear Reviewer \#2:
+
+Again, we would like to express our gratitude to you for your time and effort in reviewing and processing our manuscript and especially providing constructive comments and valuable suggestions for significantly improving the manuscript. Following these comments and suggestions, we have made changes in the revised manuscript. A point-by-point reply to the reviewer's comments is given below, where in each case we quote the referee’s comments and then explain how we have revised the paper to accommodate the revisions requested. 
+For easy cross-referencing, the comments are \textcolor{blue}{marked in blue} while we use the \begin{sf}black sans serif font\end{sf} for our responses. Meanwhile, the contents in the revised paper are \hl{highlighted by yellow shading}.
+
+\noindent \mycoauthor
+
+\noindent \mydate
+
+
+% \setcounter{reviewer}{1}
+\reviewersection
+
+
+\textcolor{blue}{Thank you for responding to my comments, however, I do not see the changes in the document related to your responses.}
+
+\begin{reply}
+  Again, we wish to thank and admire you for their thorough and rigorous reviews. We have revised and reviewed the manuscript based on your thoughtful comments.
+\end{reply}
+
+
+
+% Point one description 
+\begin{point}
+P4: The authors say 'In the same year, another OVR TSVM (Angulo et al, 2003) was designed to solve the multi-classification ..' However, in the response letter, they say 'Indeed, Angulo et al. (2003) have adopted the idea of OVR strategy for SVM. Thus, we have replaced it with (Cong et al., 2008) that the idea of OVR has been introduced into TSVM.'
+\end{point}
+% Our reply
+\begin{reply}
+Thanks for this careful comment, we apologize for not updating here. The updated ones are as follows:
+
+\begin{revision}{}
+In 2008, \mbox{\cite{cong2008efficient}} combined the OVR strategy with TSVM to achieve efficient speaker recognition.
+\linepage{104,105}{4}
+\end{revision}
+
+\end{reply}
+
+
+
+
+\reviewersection
+
+% 审稿人2
+
+
+% \bibliographystyle{model5-names}
+\bibliographystyle{IEEEtran}
+\bibliography{mylib}
+
+\end{document}
