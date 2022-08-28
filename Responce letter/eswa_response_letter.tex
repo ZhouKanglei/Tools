@@ -1,5 +1,5 @@
 % LaTeX rebuttal letter example. 
-\documentclass[12pt, review]{elsarticle}
+\documentclass[12pt, review, authoryear]{elsarticle}
 \usepackage[utf8]{inputenc}
 \usepackage{fullpage}
 \usepackage{framed} % to add frames around comments
@@ -114,9 +114,9 @@
     $^{\ref{#1}}$%
 }
 
-\newcommand{\footref}[1]{%
-     $^{\ref{#1}}$%
-}
+% \newcommand{\footref}[1]{%
+%     $^{\ref{#1}}$%
+% }
 
 \usepackage[misc]{ifsym}
 \usepackage{bbding}
@@ -311,7 +311,7 @@ problems in the article according to your requirements, and hope it can satisfy 
 
 \noindent Best regards,
 
-\noindent Juntao Li
+\noindent XXX Li
 
 \noindent \mydate
 
@@ -412,12 +412,12 @@ In 2008, \mbox{\cite{cong2008efficient}} combined the OVR strategy with TSVM to 
 
 
 \reviewersection
-
 % 审稿人2
+...
 
 
-% \bibliographystyle{model5-names}
-\bibliographystyle{IEEEtran}
+\bibliographystyle{model5-names}
+% \bibliographystyle{IEEEtran}
 \bibliography{mylib}
 
 \end{document}
