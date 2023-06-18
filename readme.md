@@ -12,17 +12,11 @@
 
 ## [Responce letter](https://zhuanlan.zhihu.com/p/187513901)
 
-![【LaTeX Template】Author Biography](https://pic4.zhimg.com/v2-37ee96176e85f4ca5b5a74453426e066_r.jpg)
-
 ##  [Responce to Reviewers](https://zhuanlan.zhihu.com/p/187218526)
-
-![LaTeX Template for Responce to Reviewers](https://pic2.zhimg.com/v2-e06a693aba6d582f9c39b98ca3dc04ad_1440w.jpg?source=172ae18b)
 
 ## Boxplot
 
-![](./Boxplot/bar_with_significance_stars.png)
-
-![](Boxplot/boxplot_with_significance_stars.png)
+<img src="./Boxplot/bar_with_significance_stars.png" alt="wdith=" style="zoom:50%;float:left;" /><img src="Boxplot/boxplot_with_significance_stars.png" style="zoom:50%;" />
 
 ## pdf2png
 
