@@ -12,7 +12,7 @@ def bar_with_significance_stars(data, title, ylabel, xticklabels, figname='bar_w
     Create a bar-and-whisker plot with significance bars.
     """
     ax = plt.axes()
-    error_params = dict(elinewidth=1, ecolor='black', capsize=5)
+    error_params = dict(elinewidth=1, ecolor='black', capsize=10)
     colors = sns.color_palette('pastel')
 
     for i, (xlabel, d, color) in enumerate(zip(xticklabels, data, colors)):
@@ -23,6 +23,8 @@ def bar_with_significance_stars(data, title, ylabel, xticklabels, figname='bar_w
     ax.set_title(title, fontsize=14)
     # Label y-axis
     ax.set_ylabel(ylabel)
+
+    plt.xticks(np.arange(len(data)) + 1, xticklabels)
 
     # Check for statistical significance
     significant_combinations = []
