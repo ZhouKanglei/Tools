@@ -16,7 +16,7 @@
 
 ## Boxplot
 
-<img src="./Boxplot/bar_with_significance_stars.png" alt="wdith=" style="zoom:50%;float:left;" /><img src="Boxplot/boxplot_with_significance_stars.png" style="zoom:50%;" />
+<img src="./Boxplot/bar_with_significance_stars.png" alt="wdith=" style="zoom:10%;float:left;" /><img src="Boxplot/boxplot_with_significance_stars.png" style="zoom:10%;" />
 
 ## pdf2png
 
